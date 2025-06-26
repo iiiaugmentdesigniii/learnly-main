@@ -64,6 +64,7 @@ import trainingProgramRoutes from "./routes/trainingProgramRoutes.js";
 import trainingSessionRoutes from "./routes/trainingSessionRoutes.js";
 import assignmentRoutes from "./routes/assignmentRoutes.js";
 import enrollmentRoutes from "./routes/enrollmentRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 
 const app = express();
 app.use(express.json());
