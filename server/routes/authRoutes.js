@@ -1,8 +1,9 @@
 // routes/authRoutes.js
-const express = require("express");
+import express from "express";
+import bcrypt from "bcryptjs";
+import User from "../models/User.js"; // Include the .js extension!
+
 const router = express.Router();
-const bcrypt = require("bcryptjs");
-const User = require("../models/User");
 
 // POST /api/auth/login
 router.post("/login", async (req, res) => {
