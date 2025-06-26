@@ -1,0 +1,16 @@
+// helpers
+@use "helpers/variables";
+@use "helpers/mixins";
+
+// base stuff
+@use "base/base";
+
+// components
+@use "components/navbar";
+
+// pages
+@use "pages/dashboard";
+@use "pages/trainingPrograms";
+@use "pages/login";
+@use "pages/forgotPassword.scss";
+@use "pages/createUser.scss";
