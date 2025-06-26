@@ -98,9 +98,6 @@ app.use("/api/training-programs", trainingProgramRoutes);
 app.use("/api/training-sessions", trainingSessionRoutes);
 app.use("/api/assignments", assignmentRoutes);
 app.use("/api/enrollments", enrollmentRoutes);
-
-//Extra setup not sure if a keeper
-const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth", authRoutes);
 
 
