@@ -108,5 +108,10 @@ if (process.env.LOCAL === "true") {
 	app.listen(PORT, () => console.log(`🚀 Server running locally on port ${PORT}`));
 }
 
+const PORT = process.env.PORT || 5050;
+app.listen(PORT, () => {
+	console.log(`🚀 Server running on port ${PORT}`);
+});
+
 // ✅ Always export for Vercel
 export const handler = serverless(app);
