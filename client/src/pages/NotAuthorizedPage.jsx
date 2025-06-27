@@ -25,7 +25,7 @@ const NotAuthorizedPage = () => {
 
 	return (
 		<div style={{ textAlign: "center", padding: "2rem" }}>
-			<h1>🚫 Not Authorized</h1>
+			<h1>🚫 Not Authorized2</h1>
 			<p>You do not have permission to view this page.</p>
 			<p>Redirecting to Dashboard...</p>
 			<a href="/">Click here if not redirected</a>
