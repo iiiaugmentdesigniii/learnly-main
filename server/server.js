@@ -56,7 +56,7 @@ import("dotenv").then((dotenv) => dotenv.config());
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import serverless from "serverless-http";
+// import serverless from "serverless-http";
 
 import userRoutes from "./routes/userRoutes.js";
 import roleRoutes from "./routes/roleRoutes.js";
@@ -103,15 +103,15 @@ app.use("/api/auth", authRoutes);
 
 
 // ✅ Conditionally start the server locally
-if (process.env.LOCAL === "true") {
-	const PORT = process.env.PORT || 5050;
-	app.listen(PORT, () => console.log(`🚀 Server running locally on port ${PORT}`));
-}
+// if (process.env.LOCAL === "true") {
+// 	const PORT = process.env.PORT || 5050;
+// 	app.listen(PORT, () => console.log(`🚀 Server running locally on port ${PORT}`));
+// }
 
 const PORT = process.env.PORT || 5050;
 app.listen(PORT, () => {
 	console.log(`🚀 Server running on port ${PORT}`);
 });
 
-// ✅ Always export for Vercel
-export const handler = serverless(app);
+// // ✅ Always export for Vercel
+// export const handler = serverless(app);
