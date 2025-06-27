@@ -28,9 +28,10 @@ import { Navigate, Outlet } from "react-router-dom";
 const ProtectedRoute = ({ allowedRoles }) => {
 	const { user } = useAuth();
 
+	console.log("User role at runtime:", user?.role?.roleName);
 	// 🧠 TEMP FIX: Just check if user exists (bypass roles for now)
 	if (!user) return <Navigate to="/login" />;
-	console.log("User role at runtime:", user?.role?.roleName);
+	
 	// ✅ Bypass role check:
 	return <Outlet />;
 
