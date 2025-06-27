@@ -156,7 +156,7 @@ import NotAuthorizedPage from "./pages/NotAuthorizedPage"; // 👈 Create this p
 function App() {
 	const router = createBrowserRouter([
 		{ path: "/login", element: <Login /> },
-		{ path: "forgot-password", element: <ForgotPassword /> },
+		{ path: "/forgot-password", element: <ForgotPassword /> },
 		{ path: "reset-password", element: <PasswordReset /> },
 		{ path: "not-authorized", element: <NotAuthorizedPage /> }, // ✅ Add this route
 
